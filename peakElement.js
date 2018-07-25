@@ -1,23 +1,36 @@
 
-    var num = [1, 6, 5, 10, 2]
-
-    function peakElement(nums) {
-      var startPt = nums[0];
-      var maxPt = 0;
-       for (i = 0; i < nums.length - 1; i++) {
-          if (nums[i] > maxPt) {
-            maxPt = nums[i]
-          }
-       }
-           if (startPt >= maxPt) {
-             return 0;
-           }
-           else {
-             return maxPt;
-           }
+   function peakElement(nums) {
+    for (i = 0; i < nums.length - 1; i++) {
+       if (nums[i] > nums[i + 1] && nums[i] > nums[i - 1])
+         return nums[i];
     }
+ }
+  let num = [1, 6, 5, 10, 2]
+  peakElement(num);
+
+
+
+
+
+    // var num = [1, 6, 5, 10, 2]
+
+    // function peakElement(nums) {
+    //   var startPt = nums[0];
+    //   var maxPt = 0;
+    //    for (i = 0; i < nums.length - 1; i++) {
+    //       if (nums[i] > maxPt) {
+    //         maxPt = nums[i]
+    //       }
+    //    }
+    //        if (startPt >= maxPt) {
+    //          return 0;
+    //        }
+    //        else {
+    //          return maxPt;
+    //        }
+    // }
  
-    peakElement(num);
+    // peakElement(num);
  // Sorted Array Solution - Last element
  // If array is sorted, we would just get the last element in the array as a peak element
    //  nums[nums.length - 1];
