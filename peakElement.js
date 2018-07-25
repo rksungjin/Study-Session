@@ -37,7 +37,29 @@
  
  //     // if(startPoint > 0 && startPoint !== end)
  //     // if((num[i - 1] || num[i + 1] !== null) && (num[i - 1] < num[i]) && (num[i + 1] < num[i]))
- //     return i;
- //   }
+//  //     return i;
+//  //   }
+
+//--------------------------
  
+//  var num = [1, 6, 5, 10, 2]
+
+//  function peakElement(nums) {
+//    var startPt = nums[0];
+//    var maxPt = 0;
+//    var multiplePeak = [];
+
+
+//     for (i = 0; i < nums.length - 1; i++) {
+//         if(nums[i + 1] > nums[i]){
+//         maxPt = nums[i + 1]  
+//         multiplePeak.push(maxPt)
+//         }
+//         return multiplePeak;
+//        }
+//     }
+
+//  peakElement(num);
+
+
  
