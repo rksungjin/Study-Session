@@ -28,7 +28,7 @@ class App extends Component {
     componentDidMount() {
       fetchUnits(this.props.unit).then(function(unit) {
         return this.setState( { unit } ) 
-      }).catch(....)
+      }).catch()
     }
     // fetchUnits(this.props) {
       
